@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Family Tree Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        input[type="text"], input[type="date"] {
+            padding: 0.5rem;
+            width: 100%;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #treeContainer {
+            margin-top: 2rem;
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .tree-node {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add Family Member</h2>
+    <form id="memberForm">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label>Birth Date</label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+        <button type="submit">Add Member</button>
+    </form>
+
+    <div id="treeContainer"></div>
+
+    <!-- Link to the JS file -->
+    <script src="family-tree.js"></script>
+</body>
+</html>
+
